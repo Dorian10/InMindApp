@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -17,10 +18,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var models = [Model]()
     
+    var listes : [VideoCourseList] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateListe()
         sectionLabel.text = "Maths"
         
         models.append(Model(text: "Premier", imageName: "VideoCourse1"))
@@ -41,6 +44,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.dataSource = self
     }
 
+    
+    func updateListe () {
+        CoreDataHelper().getVideosInChapter { (listes) in
+            if listes != nil {
+                DispatchQueue.main.async {
+                    self.listes = listes!
+                    self.table.reloadData()
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     // Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
