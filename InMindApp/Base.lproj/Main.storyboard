@@ -53,15 +53,29 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yhk-Xd-VE0">
-                                        <rect key="frame" x="0.0" y="35" width="414" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Gjd-Pd-mH2"/>
+                                            <constraint firstAttribute="height" constant="20" id="Gjd-Pd-mH2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iGn-15-s8C">
+                                        <rect key="frame" x="79" y="58" width="179" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-3X-Jie">
+                                        <rect key="frame" x="301" y="58" width="50" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Ajouter"/>
+                                        <connections>
+                                            <action selector="addVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8Q-hS-yoP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -83,13 +97,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="0uk-Ju-swv"/>
                     <connections>
+                        <outlet property="myTextField" destination="iGn-15-s8C" id="6jC-Ld-Hpf"/>
                         <outlet property="sectionLabel" destination="yhk-Xd-VE0" id="MQP-Kd-Y08"/>
                         <outlet property="table" destination="UEl-JK-FPo" id="OCu-EV-Z3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4544.927536231884" y="-143.30357142857142"/>
+            <point key="canvasLocation" x="4543.4782608695659" y="-143.30357142857142"/>
         </scene>
         <!--Chapter Controller-->
         <scene sceneID="4ie-6k-jyv">

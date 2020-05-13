@@ -12,12 +12,12 @@ import CoreData
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var table : UITableView!
-    
     @IBOutlet weak var sectionLabel: UILabel!
     
+    // TextField et Button pour ajouter des données
+    @IBOutlet weak var myTextField: UITextField!
     
     var models = [Model]()
-    
     var listes : [VideoCourseList] = []
     
     override func viewDidLoad() {
@@ -57,9 +57,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    
-    
-    
+    @IBAction func addVideo(_ sender: UIButton) {
+        CoreDataHelper().saveVideo(myTextField.text)
+        updateListe()
+    }
     
     
     // Table

@@ -14,12 +14,31 @@ typealias ListeCompletion = (_ listes : [VideoCourseList]?) -> Void
 
 class CoreDataHelper {
     
+    // Récupérer base CoreData
     private let appDel = UIApplication.shared.delegate as! AppDelegate
     
+    // Récupérer le contexte
     var context : NSManagedObjectContext {
         return appDel.persistentContainer.viewContext
     }
     
+    // Sauvegarder dans CoreData
+    func save () {
+        appDel.saveContext()
+    }
+    
+    /* Logique ENTITY VideoCourse */
+    func saveVideo (_ string : String?) {
+        guard let texte = string, texte != "" else { return }
+        let nouvelleVideo = VideoCourseList(context: context)
+        nouvelleVideo.name = texte
+        nouvelleVideo.sectionName = "Maths"
+        nouvelleVideo.dateAdded = Date()
+        nouvelleVideo.chapterName = "Fonctions"
+        save()
+        print("Sauvegardé")
+    }
+
     
     func getVideosInChapter(completion : ListeCompletion?) {
         let fetchRequest : NSFetchRequest<VideoCourseList> = VideoCourseList.fetchRequest()

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -62,7 +62,6 @@
 				1576C5083D6FEB124ACA5D31 /* Pods-InMindApp.debug.xcconfig */,
 				E9468CD14DBFCFE4E1F42D00 /* Pods-InMindApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

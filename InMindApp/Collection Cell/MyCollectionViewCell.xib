@@ -16,13 +16,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="205" height="160"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Uz-GLc">
-                        <rect key="frame" x="0.0" y="110" width="205" height="30"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Uz-GLc">
+                        <rect key="frame" x="8" y="95" width="197" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="DiC-5L-o6b"/>
+                            <constraint firstAttribute="height" constant="20" id="DiC-5L-o6b"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ofn-K7-3Pb">
@@ -37,8 +37,8 @@
             </view>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="9bw-Uz-GLc" secondAttribute="bottom" constant="20" id="2Av-7U-4Xy"/>
-                <constraint firstItem="9bw-Uz-GLc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OJU-Tk-gT2"/>
+                <constraint firstItem="9bw-Uz-GLc" firstAttribute="top" secondItem="ofn-K7-3Pb" secondAttribute="bottom" constant="5" id="Hi0-wx-u6g"/>
+                <constraint firstItem="9bw-Uz-GLc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="OJU-Tk-gT2"/>
                 <constraint firstItem="ofn-K7-3Pb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ho4-oV-gsM"/>
                 <constraint firstAttribute="trailing" secondItem="9bw-Uz-GLc" secondAttribute="trailing" id="ucs-1a-n0A"/>
                 <constraint firstItem="ofn-K7-3Pb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yUo-9A-5kB"/>
