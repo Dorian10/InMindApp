@@ -1,0 +1,6 @@
+framework module Pods_InMindApp {
+  umbrella header "Pods-InMindApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
