@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E717402D246B87630051C0E5 /* ChapterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E717402C246B87630051C0E5 /* ChapterController.swift */; };
 		E77EE7D0246B23FF000C459C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7CF246B23FF000C459C /* AppDelegate.swift */; };
 		E77EE7D2246B23FF000C459C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D1246B23FF000C459C /* SceneDelegate.swift */; };
 		E77EE7D4246B23FF000C459C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D3246B23FF000C459C /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E717402C246B87630051C0E5 /* ChapterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterController.swift; sourceTree = "<group>"; };
 		E77EE7CC246B23FF000C459C /* InMindApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InMindApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77EE7CF246B23FF000C459C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77EE7D1246B23FF000C459C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +77,6 @@
 				E77EE7E6246B2557000C459C /* Table Cell */,
 				E77EE7CF246B23FF000C459C /* AppDelegate.swift */,
 				E77EE7D1246B23FF000C459C /* SceneDelegate.swift */,
-				E77EE7D3246B23FF000C459C /* ViewController.swift */,
 				E77EE7D5246B23FF000C459C /* Main.storyboard */,
 				E77EE7DB246B2400000C459C /* Assets.xcassets */,
 				E77EE7DD246B2400000C459C /* LaunchScreen.storyboard */,
@@ -105,6 +106,8 @@
 		E77EE7F0246B58E4000C459C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E77EE7D3246B23FF000C459C /* ViewController.swift */,
+				E717402C246B87630051C0E5 /* ChapterController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				E77EE7EE246B25D5000C459C /* MyCollectionViewCell.swift in Sources */,
 				E77EE7F4246B5966000C459C /* CoreDataHelper.swift in Sources */,
 				E77EE7D0246B23FF000C459C /* AppDelegate.swift in Sources */,
+				E717402D246B87630051C0E5 /* ChapterController.swift in Sources */,
 				E77EE7DA246B23FF000C459C /* InMindApp.xcdatamodeld in Sources */,
 				E77EE7D2246B23FF000C459C /* SceneDelegate.swift in Sources */,
 			);
