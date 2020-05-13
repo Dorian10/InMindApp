@@ -14,7 +14,21 @@
                     <view key="view" contentMode="scaleToFill" id="zu9-Yw-5Je">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2O-QT-UJV" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="6Fd-6m-NUe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u2O-QT-UJV" firstAttribute="leading" secondItem="tbS-xf-pOT" secondAttribute="leading" id="L1H-wT-BUD"/>
+                            <constraint firstItem="u2O-QT-UJV" firstAttribute="top" secondItem="tbS-xf-pOT" secondAttribute="top" id="Qqi-xr-gv7"/>
+                            <constraint firstItem="tbS-xf-pOT" firstAttribute="trailing" secondItem="u2O-QT-UJV" secondAttribute="trailing" id="vah-dR-rvE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tbS-xf-pOT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mon agenda" image="calendar" catalog="system" id="JkS-IS-d9T"/>
@@ -123,6 +137,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="q45-hD-XfI"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aSd-Dw-bsq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
