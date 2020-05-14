@@ -10,14 +10,42 @@ import UIKit
 
 class MyCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet var myLabel : UILabel!
+    var liste : VideoCourseList!
+    var models = [Model]()
+    
     @IBOutlet var myImageView : UIImageView!
+    @IBOutlet var myLabel : UILabel!
+    
+    @IBOutlet weak var myDateLabel: UILabel!
     
     static let identifier = "MyCollectionViewCell"
     
     static func nib() -> UINib {
         return UINib(nibName: "MyCollectionViewCell", bundle: nil)
     }
+    
+    
+    func setupCells(liste : VideoCourseList) {
+        self.liste = liste
+        
+        if self.liste.name != nil {
+            self.myLabel.text = self.liste.name
+        } else {
+            self.myLabel.text = "Pas de titre"
+        }
+        
+        if self.liste.dateAdded != nil {
+            self.myDateLabel.text = "Ajoutée le " + self.liste.dateAdded!.toString()
+        } else {
+            myDateLabel.text = "Aucune date disponible"
+        }
+
+        //models.append(Model(text: myLabel.text!, imageName: "VideoCourse1"))
+
+
+    }
+    
+    
     
     
     override func awakeFromNib() {

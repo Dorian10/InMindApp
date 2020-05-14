@@ -11,6 +11,10 @@ import UIKit
 class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet var chapterLabel : UILabel!
+    @IBOutlet var collectionView : UICollectionView!
+    
+    var models = [Model]()
+    //var listes = [VideoCourseList]() COMMENT UTILISER listes du ViewController ? pb : ici vide
     
     static let identifier = "CollectionTableViewCell"
     
@@ -18,16 +22,13 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
         return UINib(nibName: "CollectionTableViewCell", bundle: nil)
     }
     
+    
     func setup (with models : [Model]) {
         
         chapterLabel.text = "Fonctions affines"
         self.models = models
         collectionView.reloadData()
     }
-    
-    @IBOutlet var collectionView : UICollectionView!
-    
-    var models = [Model]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,12 +46,16 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     // Collection
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         return models.count
+        //return listes.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath) as! MyCollectionViewCell
+        //cell.setupCells(liste : listes[indexPath.row])
         cell.setup(with: models[indexPath.row])
+        
         return cell
     }
     

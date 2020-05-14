@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Uz-GLc">
-                        <rect key="frame" x="8" y="95" width="197" height="20"/>
+                        <rect key="frame" x="5" y="95" width="200" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="DiC-5L-o6b"/>
                         </constraints>
@@ -33,19 +33,32 @@
                             <constraint firstAttribute="height" constant="90" id="dBY-bI-DC0" userLabel="height = 90"/>
                         </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-Gj-Mdd">
+                        <rect key="frame" x="5" y="115" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="TCv-gb-oQe"/>
+                            <constraint firstAttribute="height" constant="20" id="fdf-Jq-Yb2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="9bw-Uz-GLc" firstAttribute="top" secondItem="ofn-K7-3Pb" secondAttribute="bottom" constant="5" id="Hi0-wx-u6g"/>
-                <constraint firstItem="9bw-Uz-GLc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="OJU-Tk-gT2"/>
+                <constraint firstItem="9bw-Uz-GLc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="OJU-Tk-gT2"/>
+                <constraint firstItem="bhc-Gj-Mdd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="g2m-ic-QtC"/>
                 <constraint firstItem="ofn-K7-3Pb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ho4-oV-gsM"/>
+                <constraint firstItem="bhc-Gj-Mdd" firstAttribute="top" secondItem="9bw-Uz-GLc" secondAttribute="bottom" id="l9f-z9-FGf"/>
                 <constraint firstAttribute="trailing" secondItem="9bw-Uz-GLc" secondAttribute="trailing" id="ucs-1a-n0A"/>
                 <constraint firstItem="ofn-K7-3Pb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yUo-9A-5kB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="205" height="160"/>
             <connections>
+                <outlet property="myDateLabel" destination="bhc-Gj-Mdd" id="tLh-w8-0nU"/>
                 <outlet property="myImageView" destination="ofn-K7-3Pb" id="Sdd-2H-nuG"/>
                 <outlet property="myLabel" destination="9bw-Uz-GLc" id="ZgA-cg-8Fz"/>
             </connections>

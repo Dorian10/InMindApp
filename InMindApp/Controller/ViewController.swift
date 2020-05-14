@@ -26,13 +26,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         updateListe()
         sectionLabel.text = "Maths"
         
-        models.append(Model(text: "Premier", imageName: "VideoCourse1"))
-        models.append(Model(text: "Deuxième", imageName: "VideoCourse2"))
-        models.append(Model(text: "Troisième", imageName: "VideoCourse3"))
         models.append(Model(text: "Quatrième", imageName: "VideoCourse4"))
         models.append(Model(text: "Premier", imageName: "VideoCourse1"))
         models.append(Model(text: "Deuxième", imageName: "VideoCourse2"))
         models.append(Model(text: "Troisième", imageName: "VideoCourse3"))
+        models.append(Model(text: "Quatrième", imageName: "VideoCourse4"))
         models.append(Model(text: "Quatrième", imageName: "VideoCourse4"))
         models.append(Model(text: "Premier", imageName: "VideoCourse1"))
         models.append(Model(text: "Deuxième", imageName: "VideoCourse2"))
@@ -44,6 +42,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.dataSource = self
     }
 
+    // setupCells(liste : listes[indexPath.row]) COMMENT FAIRE ?
     
     func updateListe () {
         CoreDataHelper().getVideosInChapter { (listes) in
@@ -55,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         }
     }
-    
+     
     
     @IBAction func addVideo(_ sender: UIButton) {
         CoreDataHelper().saveVideo(myTextField.text)
@@ -66,20 +65,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        //return models.count
+        return listes.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for : indexPath) as! CollectionTableViewCell
         cell.setup(with: models)
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200.0
     }
-    
-    
+
+ 
     
 }
 
