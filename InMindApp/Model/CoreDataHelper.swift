@@ -40,7 +40,7 @@ class CoreDataHelper {
     }
 
     
-    func getVideosInChapter(completion : ListeCompletion?) {
+    func getVideoCourses(completion : ListeCompletion?) {
         let fetchRequest : NSFetchRequest<VideoCourseList> = VideoCourseList.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "dateAdded", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]

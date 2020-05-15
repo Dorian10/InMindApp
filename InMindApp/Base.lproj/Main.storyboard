@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="4543.4782608695659" y="-143.30357142857142"/>
         </scene>
-        <!--Chapter Controller-->
+        <!--All My Courses Controller-->
         <scene sceneID="4ie-6k-jyv">
             <objects>
-                <viewController id="gPV-C6-U7u" customClass="ChapterController" customModule="InMindApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gPV-C6-U7u" customClass="AllMyCoursesController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PFR-jV-kr4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

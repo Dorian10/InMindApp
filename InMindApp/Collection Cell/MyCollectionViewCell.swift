@@ -11,7 +11,7 @@ import UIKit
 class MyCollectionViewCell: UICollectionViewCell {
 
     var liste : VideoCourseList!
-    var models = [Model]()
+    //var videos = [Video]()
     
     @IBOutlet var myImageView : UIImageView!
     @IBOutlet var myLabel : UILabel!
@@ -40,7 +40,7 @@ class MyCollectionViewCell: UICollectionViewCell {
             myDateLabel.text = "Aucune date disponible"
         }
 
-        //models.append(Model(text: myLabel.text!, imageName: "VideoCourse1"))
+        //videos.append(Model(text: myLabel.text!, imageName: "VideoCourse1"))
 
 
     }
@@ -53,7 +53,7 @@ class MyCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    public func setup (with model : Model){
+    public func setup (with model : Video){
         self.myLabel.text = model.text
         self.myImageView.image = UIImage(named: model.imageName)
     }

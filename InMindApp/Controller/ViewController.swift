@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // TextField et Button pour ajouter des données
     @IBOutlet weak var myTextField: UITextField!
     
-    var models = [Model]()
+    var videos = [Video]()
     var listes : [VideoCourseList] = []
     
     override func viewDidLoad() {
@@ -26,16 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         updateListe()
         sectionLabel.text = "Maths"
         
-        models.append(Model(text: "Quatrième", imageName: "VideoCourse4"))
-        models.append(Model(text: "Premier", imageName: "VideoCourse1"))
-        models.append(Model(text: "Deuxième", imageName: "VideoCourse2"))
-        models.append(Model(text: "Troisième", imageName: "VideoCourse3"))
-        models.append(Model(text: "Quatrième", imageName: "VideoCourse4"))
-        models.append(Model(text: "Quatrième", imageName: "VideoCourse4"))
-        models.append(Model(text: "Premier", imageName: "VideoCourse1"))
-        models.append(Model(text: "Deuxième", imageName: "VideoCourse2"))
-        models.append(Model(text: "Troisième", imageName: "VideoCourse3"))
-        models.append(Model(text: "Quatrième", imageName: "VideoCourse4"))
+        videos = VideoCollection().getVideosFromCollection()
         
         table.register(CollectionTableViewCell.nib(), forCellReuseIdentifier: CollectionTableViewCell.identifier)
         table.delegate = self
@@ -45,11 +36,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // setupCells(liste : listes[indexPath.row]) COMMENT FAIRE ?
     
     func updateListe () {
-        CoreDataHelper().getVideosInChapter { (listes) in
+        CoreDataHelper().getVideoCourses { (listes) in
             if listes != nil {
                 DispatchQueue.main.async {
                     self.listes = listes!
                     self.table.reloadData()
+                    print(listes!.count)
                 }
             }
         }
@@ -65,13 +57,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return models.count
+        //return videos.count
         return listes.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for : indexPath) as! CollectionTableViewCell
-        cell.setup(with: models)
+        cell.setup(with: videos)
         
         return cell
     }
@@ -84,15 +76,3 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
 }
 
-struct Model {
-    
-    let text : String
-    let imageName : String
-    
-    init(text : String, imageName : String) {
-        
-        self.text = text
-        self.imageName = imageName
-    }
-    
-}

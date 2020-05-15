@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet var chapterLabel : UILabel!
     @IBOutlet var collectionView : UICollectionView!
     
-    var models = [Model]()
+    var videos = [Video]()
     //var listes = [VideoCourseList]() COMMENT UTILISER listes du ViewController ? pb : ici vide
     
     static let identifier = "CollectionTableViewCell"
@@ -23,10 +24,10 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     }
     
     
-    func setup (with models : [Model]) {
+    func setup (with videos : [Video]) {
         
         chapterLabel.text = "Fonctions affines"
-        self.models = models
+        self.videos = videos
         collectionView.reloadData()
     }
     
@@ -47,14 +48,14 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return models.count
+        return videos.count
         //return listes.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath) as! MyCollectionViewCell
         //cell.setupCells(liste : listes[indexPath.row])
-        cell.setup(with: models[indexPath.row])
+        cell.setup(with: videos[indexPath.row])
         
         return cell
     }
