@@ -10,13 +10,13 @@ import Foundation
 
 class Video {
     
-    let text : String
-       let imageName : String
-       
-       init(text : String, imageName : String) {
-           
-           self.text = text
-           self.imageName = imageName
-       }
+    let videoTitle : String
+    let videoId : String
+
+    init(videoId : String, videoTitle : String) {
+        
+        self.videoId = videoId
+        self.videoTitle = videoTitle
+    }
     
 }

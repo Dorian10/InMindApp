@@ -6,6 +6,7 @@
 //  Copyright © 2020 Dorian Solant. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 class MyCollectionViewCell: UICollectionViewCell {
@@ -44,19 +45,45 @@ class MyCollectionViewCell: UICollectionViewCell {
 
 
     }
-    
-    
-    
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    public func setup (with model : Video){
-        self.myLabel.text = model.text
-        self.myImageView.image = UIImage(named: model.imageName)
+    
+    func load(url : URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data : data) {
+                    DispatchQueue.main.async {
+                        self?.myImageView.image = image
+                        self?.myImageView.contentMode = UIView.ContentMode.scaleAspectFill
+                        self?.myImageView.layer.cornerRadius = 4
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    public func setup (with video : Video){
+        self.myLabel.text = video.videoTitle
+        //self.myImageView.image = UIImage(named: video.imageName)
+        
+        let urlString = "https://i.ytimg.com/vi/" + video.videoId + "/hqdefault.jpg"
+        
+        if let url = URL(string: urlString) {
+            self.load(url: url)
+            print(url)
+        }
+        
+        
     }
 
     
 }
+
+
+
+

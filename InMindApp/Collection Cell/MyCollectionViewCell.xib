@@ -10,43 +10,44 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="InMindApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="205" height="160"/>
+            <rect key="frame" x="0.0" y="0.0" width="225" height="161"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="205" height="160"/>
+                <rect key="frame" x="0.0" y="0.0" width="225" height="161"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Uz-GLc">
-                        <rect key="frame" x="5" y="95" width="200" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-Uz-GLc">
+                        <rect key="frame" x="5" y="95" width="220" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="DiC-5L-o6b"/>
+                            <constraint firstAttribute="height" constant="40" id="DiC-5L-o6b"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
-                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ofn-K7-3Pb">
-                        <rect key="frame" x="22.5" y="0.0" width="160" height="90"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <rect key="frame" x="0.0" y="0.0" width="225" height="90"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="160" id="KQS-xs-QZ8" userLabel="width = 160"/>
-                            <constraint firstAttribute="height" constant="90" id="dBY-bI-DC0" userLabel="height = 90"/>
+                            <constraint firstAttribute="height" constant="90" id="hid-Am-Png"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-Gj-Mdd">
-                        <rect key="frame" x="5" y="115" width="50" height="20"/>
+                        <rect key="frame" x="5" y="135" width="50" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="TCv-gb-oQe"/>
                             <constraint firstAttribute="height" constant="20" id="fdf-Jq-Yb2"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="ofn-K7-3Pb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0zT-4f-L6Y"/>
+                <constraint firstAttribute="trailing" secondItem="ofn-K7-3Pb" secondAttribute="trailing" id="Eti-zj-D7W"/>
                 <constraint firstItem="9bw-Uz-GLc" firstAttribute="top" secondItem="ofn-K7-3Pb" secondAttribute="bottom" constant="5" id="Hi0-wx-u6g"/>
                 <constraint firstItem="9bw-Uz-GLc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="OJU-Tk-gT2"/>
                 <constraint firstItem="bhc-Gj-Mdd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="g2m-ic-QtC"/>
@@ -56,13 +57,13 @@
                 <constraint firstItem="ofn-K7-3Pb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yUo-9A-5kB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="205" height="160"/>
+            <size key="customSize" width="225" height="161"/>
             <connections>
                 <outlet property="myDateLabel" destination="bhc-Gj-Mdd" id="tLh-w8-0nU"/>
                 <outlet property="myImageView" destination="ofn-K7-3Pb" id="Sdd-2H-nuG"/>
                 <outlet property="myLabel" destination="9bw-Uz-GLc" id="ZgA-cg-8Fz"/>
             </connections>
-            <point key="canvasLocation" x="232.60869565217394" y="101.11607142857143"/>
+            <point key="canvasLocation" x="247.10144927536234" y="101.45089285714285"/>
         </collectionViewCell>
     </objects>
 </document>

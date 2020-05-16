@@ -14,13 +14,13 @@ class VideoCollection {
         
         var videos : [Video] = []
         
-        let video1 = Video(text: "Premier", imageName: "VideoCourse1")
+        let video1 = Video(videoId: "n5_pRx4ozIg", videoTitle: "LE COURS : Fonctions affines - Troisième")
         
-        let video2 = Video(text: "Deuxième", imageName: "VideoCourse2")
+        let video2 = Video(videoId: "eLTCwPcTyHk", videoTitle: "Nombres complexes - Définition - Maths terminale - Les Bons Profs")
         
-        let video3 = Video(text: "Troisième", imageName: "VideoCourse3")
+        let video3 = Video(videoId: "4RkLVgGCVgw", videoTitle: "8 astuces BONNES NOTES | comment réussir ses études?")
         
-        let video4 = Video(text: "Quatrième", imageName: "VideoCourse4")
+        let video4 = Video(videoId: "ZyZTQ2oRQZU", videoTitle: "Théorème de Thalès - Maths 3e - Les Bons Profs")
         
         videos.append(video1)
         videos.append(video2)
