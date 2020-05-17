@@ -12,6 +12,9 @@
 		E73440A7246ECD8400E95473 /* VideoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73440A6246ECD8400E95473 /* VideoCollection.swift */; };
 		E73440A9246ECD9C00E95473 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73440A8246ECD9C00E95473 /* Video.swift */; };
 		E7482760246C962300BF2466 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E748275F246C962300BF2466 /* ExtensionDate.swift */; };
+		E75A3C132470E1770047556D /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A3C122470E1770047556D /* CalendarController.swift */; };
+		E75A3C152470EBE80047556D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A3C142470EBE80047556D /* LoginController.swift */; };
+		E75D81EA2470C80E0004965F /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D81E92470C80E0004965F /* SignupController.swift */; };
 		E77EE7D0246B23FF000C459C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7CF246B23FF000C459C /* AppDelegate.swift */; };
 		E77EE7D2246B23FF000C459C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D1246B23FF000C459C /* SceneDelegate.swift */; };
 		E77EE7D4246B23FF000C459C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D3246B23FF000C459C /* ViewController.swift */; };
@@ -24,6 +27,7 @@
 		E77EE7EE246B25D5000C459C /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7EC246B25D5000C459C /* MyCollectionViewCell.swift */; };
 		E77EE7EF246B25D5000C459C /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77EE7ED246B25D5000C459C /* MyCollectionViewCell.xib */; };
 		E77EE7F4246B5966000C459C /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7F3246B5966000C459C /* CoreDataHelper.swift */; };
+		E7E4A0632470B3B3008607E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7E4A0622470B3B3008607E2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,9 @@
 		E73440A6246ECD8400E95473 /* VideoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollection.swift; sourceTree = "<group>"; };
 		E73440A8246ECD9C00E95473 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		E748275F246C962300BF2466 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
+		E75A3C122470E1770047556D /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		E75A3C142470EBE80047556D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E75D81E92470C80E0004965F /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		E77EE7CC246B23FF000C459C /* InMindApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InMindApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77EE7CF246B23FF000C459C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77EE7D1246B23FF000C459C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		E77EE7EC246B25D5000C459C /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		E77EE7ED246B25D5000C459C /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		E77EE7F3246B5966000C459C /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		E7E4A0622470B3B3008607E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9468CD14DBFCFE4E1F42D00 /* Pods-InMindApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMindApp.release.xcconfig"; path = "Target Support Files/Pods-InMindApp/Pods-InMindApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +111,7 @@
 				E77EE7DB246B2400000C459C /* Assets.xcassets */,
 				E77EE7DD246B2400000C459C /* LaunchScreen.storyboard */,
 				E77EE7E0246B2400000C459C /* Info.plist */,
+				E7E4A0622470B3B3008607E2 /* GoogleService-Info.plist */,
 			);
 			path = InMindApp;
 			sourceTree = "<group>";
@@ -130,6 +139,9 @@
 			children = (
 				E77EE7D3246B23FF000C459C /* ViewController.swift */,
 				E717402C246B87630051C0E5 /* ChapterController.swift */,
+				E75D81E92470C80E0004965F /* SignupController.swift */,
+				E75A3C122470E1770047556D /* CalendarController.swift */,
+				E75A3C142470EBE80047556D /* LoginController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,6 +238,7 @@
 				E77EE7DC246B2400000C459C /* Assets.xcassets in Resources */,
 				E77EE7D7246B23FF000C459C /* Main.storyboard in Resources */,
 				E77EE7EB246B2594000C459C /* CollectionTableViewCell.xib in Resources */,
+				E7E4A0632470B3B3008607E2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +294,17 @@
 				E77EE7EA246B2594000C459C /* CollectionTableViewCell.swift in Sources */,
 				E77EE7D4246B23FF000C459C /* ViewController.swift in Sources */,
 				E77EE7EE246B25D5000C459C /* MyCollectionViewCell.swift in Sources */,
+				E75D81EA2470C80E0004965F /* SignupController.swift in Sources */,
 				E77EE7F4246B5966000C459C /* CoreDataHelper.swift in Sources */,
 				E77EE7D0246B23FF000C459C /* AppDelegate.swift in Sources */,
 				E717402D246B87630051C0E5 /* ChapterController.swift in Sources */,
 				E77EE7DA246B23FF000C459C /* InMindApp.xcdatamodeld in Sources */,
+				E75A3C132470E1770047556D /* CalendarController.swift in Sources */,
 				E73440A9246ECD9C00E95473 /* Video.swift in Sources */,
 				E73440A7246ECD8400E95473 /* VideoCollection.swift in Sources */,
 				E7482760246C962300BF2466 /* ExtensionDate.swift in Sources */,
 				E77EE7D2246B23FF000C459C /* SceneDelegate.swift in Sources */,
+				E75A3C152470EBE80047556D /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.InMindApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dorian.InMindApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,7 +475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = test.InMindApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Dorian.InMindApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

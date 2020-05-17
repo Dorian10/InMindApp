@@ -8,5 +8,10 @@ target 'InMindApp' do
   # Pods for InMindApp
 
 pod 'FSCalendar'
+pod 'Firebase/Analytics'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+
 
 end
