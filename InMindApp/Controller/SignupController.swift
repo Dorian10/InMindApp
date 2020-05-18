@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignupController: UIViewController {
 
@@ -71,7 +72,14 @@ class SignupController: UIViewController {
                 if error != nil {
                     print(error.debugDescription)
                 } else {
-                    self.performSegue(withIdentifier: "goToCalendarFromSignup", sender: self)
+                    
+                    let ref = Database.database().reference()
+                    let userID = Auth.auth().currentUser?.uid
+                    ref.child("users").child("userID").setValue(["username": self.usernameTextField.text!])
+                    
+                    
+                    
+                    self.performSegue(withIdentifier: "GoToCalendarFromSignup", sender: self)
                 }
             }
         } else {

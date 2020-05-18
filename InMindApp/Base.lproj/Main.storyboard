@@ -7,12 +7,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mon agenda-->
+        <!--Calendar Controller-->
         <scene sceneID="0J5-9o-nSz">
             <objects>
-                <viewController id="r0a-Y5-eZ5" customClass="CalendarController" customModule="InMindApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r0a-Y5-eZ5" userLabel="Calendar Controller" customClass="CalendarController" customModule="InMindApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zu9-Yw-5Je">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2O-QT-UJV" customClass="FSCalendar">
@@ -43,7 +43,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tbS-xf-pOT"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mon agenda" image="calendar" catalog="system" id="JkS-IS-d9T"/>
+                    <tabBarItem key="tabBarItem" title="Agenda" image="calendar" catalog="system" id="FfO-ge-6vo"/>
                     <navigationItem key="navigationItem" id="y2a-3w-Pob"/>
                     <connections>
                         <outlet property="welcomeMessage" destination="k1i-cP-emI" id="xNO-jc-PAw"/>
@@ -51,7 +51,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQd-25-q6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2166" y="685"/>
+            <point key="canvasLocation" x="2054" y="692"/>
+        </scene>
+        <!--Profil-->
+        <scene sceneID="TOR-WI-iSw">
+            <objects>
+                <viewController id="caK-Gc-8FA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0u9-22-iem">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PnC-0T-U27"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profil" image="person.fill" catalog="system" id="lOf-J3-h1W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfT-OW-sxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2054" y="1396"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -121,12 +137,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4543.4782608695659" y="-143.30357142857142"/>
+            <point key="canvasLocation" x="3862" y="5"/>
         </scene>
-        <!--All My Courses Controller-->
+        <!--View Controller-->
         <scene sceneID="4ie-6k-jyv">
             <objects>
-                <viewController id="gPV-C6-U7u" customClass="AllMyCoursesController" sceneMemberID="viewController">
+                <viewController id="gPV-C6-U7u" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PFR-jV-kr4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tn-wD-qKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3579.7101449275365" y="-143.30357142857142"/>
+            <point key="canvasLocation" x="2955" y="5"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="Y2X-zJ-ICL">
@@ -216,7 +232,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonWasPressed:" destination="0J2-gE-y4t" eventType="touchUpInside" id="kAT-tZ-L0V"/>
-                                    <segue destination="cNH-5A-lMM" kind="presentation" modalPresentationStyle="currentContext" id="Tou-F9-vj8"/>
+                                    <segue destination="cNH-5A-lMM" kind="presentation" modalPresentationStyle="currentContext" id="ztO-rI-qow"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Déjà un compte ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T53-Oo-KJ5">
@@ -261,18 +277,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m1L-6s-SLg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rUF-9b-lBV"/>
                     <connections>
                         <outlet property="emailTextField" destination="1kB-87-Ef6" id="iHX-9l-2kd"/>
                         <outlet property="loginButton" destination="cxX-Pn-ttD" id="1yM-xd-l1o"/>
                         <outlet property="passwordTextField" destination="aPj-iE-LcE" id="W5v-61-4qK"/>
                         <outlet property="signupButton" destination="iH0-Kc-5lQ" id="XbE-X4-vzM"/>
                         <outlet property="usernameTextField" destination="lDj-f7-heG" id="LWq-Ty-FtJ"/>
-                        <segue destination="r0a-Y5-eZ5" kind="presentation" identifier="goToCalendarFromSignup" modalPresentationStyle="currentContext" id="cSE-1u-N9U"/>
+                        <segue destination="JFl-ed-TL7" kind="presentation" identifier="GoToCalendarFromSignup" modalPresentationStyle="currentContext" id="dg2-Dk-Gxk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNh-0x-2cN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="684"/>
+            <point key="canvasLocation" x="-86" y="415"/>
         </scene>
         <!--Login Controller-->
         <scene sceneID="EV8-lA-T0o">
@@ -304,7 +321,7 @@
                                             <constraint firstAttribute="height" constant="40" id="fst-Bq-n8U"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -350,16 +367,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ca1-n5-G0q"/>
                     </view>
+                    <navigationItem key="navigationItem" id="W5u-qZ-jHz"/>
                     <connections>
                         <outlet property="emailTextField" destination="ESq-G2-0JE" id="0Sa-xb-ajr"/>
                         <outlet property="loginButton" destination="GO3-8M-vj7" id="U1n-1x-RsG"/>
                         <outlet property="passwordTextField" destination="kgr-0t-KOb" id="6YD-2Q-6x9"/>
-                        <segue destination="r0a-Y5-eZ5" kind="presentation" identifier="GoToCalendarFromLogin" modalPresentationStyle="currentContext" id="5yL-ge-bB0"/>
+                        <segue destination="JFl-ed-TL7" kind="presentation" identifier="GoToCalendarFromLogin" modalPresentationStyle="currentContext" id="ePZ-5x-0xL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2X-Mo-goQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="1359"/>
+            <point key="canvasLocation" x="-87" y="1187"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Bao-wr-cu2">
@@ -370,19 +388,20 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="aSd-Dw-bsq">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="r0a-Y5-eZ5" kind="relationship" relationship="viewControllers" id="zOG-Nv-0YJ"/>
+                        <segue destination="r0a-Y5-eZ5" kind="relationship" relationship="viewControllers" id="qoo-SM-aIa"/>
                         <segue destination="M9d-hO-Zkk" kind="relationship" relationship="viewControllers" id="He0-ec-37S"/>
+                        <segue destination="caK-Gc-8FA" kind="relationship" relationship="viewControllers" id="GjI-Z9-69a"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCD-Ty-9iM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="-44"/>
+            <point key="canvasLocation" x="1007" y="692"/>
         </scene>
         <!--Mes cours-->
         <scene sceneID="yM0-Sm-bNr">
@@ -405,14 +424,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKB-yS-Tke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669.5652173913045" y="-143.30357142857142"/>
+            <point key="canvasLocation" x="2054" y="5"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cSE-1u-N9U"/>
+        <segue reference="ePZ-5x-0xL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="play.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="texture" width="3500" height="2474"/>
         <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>

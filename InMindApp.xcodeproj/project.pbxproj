@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A6B10B79C54332AF0D5E31F1 /* Pods_InMindApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3056152248367C378E24F5 /* Pods_InMindApp.framework */; };
-		E717402D246B87630051C0E5 /* ChapterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E717402C246B87630051C0E5 /* ChapterController.swift */; };
 		E73440A7246ECD8400E95473 /* VideoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73440A6246ECD8400E95473 /* VideoCollection.swift */; };
 		E73440A9246ECD9C00E95473 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73440A8246ECD9C00E95473 /* Video.swift */; };
 		E7482760246C962300BF2466 /* ExtensionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E748275F246C962300BF2466 /* ExtensionDate.swift */; };
 		E75A3C132470E1770047556D /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A3C122470E1770047556D /* CalendarController.swift */; };
 		E75A3C152470EBE80047556D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A3C142470EBE80047556D /* LoginController.swift */; };
 		E75D81EA2470C80E0004965F /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D81E92470C80E0004965F /* SignupController.swift */; };
+		E77E40D4247120F5000CE867 /* AllMyCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77E40D3247120F5000CE867 /* AllMyCoursesViewController.swift */; };
 		E77EE7D0246B23FF000C459C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7CF246B23FF000C459C /* AppDelegate.swift */; };
 		E77EE7D2246B23FF000C459C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D1246B23FF000C459C /* SceneDelegate.swift */; };
 		E77EE7D4246B23FF000C459C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D3246B23FF000C459C /* ViewController.swift */; };
@@ -27,19 +27,20 @@
 		E77EE7EE246B25D5000C459C /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7EC246B25D5000C459C /* MyCollectionViewCell.swift */; };
 		E77EE7EF246B25D5000C459C /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77EE7ED246B25D5000C459C /* MyCollectionViewCell.xib */; };
 		E77EE7F4246B5966000C459C /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7F3246B5966000C459C /* CoreDataHelper.swift */; };
+		E7DC324824731E2300A4E9FB /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DC324724731E2300A4E9FB /* ProfileController.swift */; };
 		E7E4A0632470B3B3008607E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7E4A0622470B3B3008607E2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1576C5083D6FEB124ACA5D31 /* Pods-InMindApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMindApp.debug.xcconfig"; path = "Target Support Files/Pods-InMindApp/Pods-InMindApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3056152248367C378E24F5 /* Pods_InMindApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InMindApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E717402C246B87630051C0E5 /* ChapterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterController.swift; sourceTree = "<group>"; };
 		E73440A6246ECD8400E95473 /* VideoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollection.swift; sourceTree = "<group>"; };
 		E73440A8246ECD9C00E95473 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		E748275F246C962300BF2466 /* ExtensionDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDate.swift; sourceTree = "<group>"; };
 		E75A3C122470E1770047556D /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		E75A3C142470EBE80047556D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E75D81E92470C80E0004965F /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		E77E40D3247120F5000CE867 /* AllMyCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyCoursesViewController.swift; sourceTree = "<group>"; };
 		E77EE7CC246B23FF000C459C /* InMindApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InMindApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77EE7CF246B23FF000C459C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77EE7D1246B23FF000C459C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		E77EE7EC246B25D5000C459C /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		E77EE7ED246B25D5000C459C /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		E77EE7F3246B5966000C459C /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		E7DC324724731E2300A4E9FB /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		E7E4A0622470B3B3008607E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9468CD14DBFCFE4E1F42D00 /* Pods-InMindApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InMindApp.release.xcconfig"; path = "Target Support Files/Pods-InMindApp/Pods-InMindApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,10 +140,11 @@
 			isa = PBXGroup;
 			children = (
 				E77EE7D3246B23FF000C459C /* ViewController.swift */,
-				E717402C246B87630051C0E5 /* ChapterController.swift */,
 				E75D81E92470C80E0004965F /* SignupController.swift */,
 				E75A3C122470E1770047556D /* CalendarController.swift */,
 				E75A3C142470EBE80047556D /* LoginController.swift */,
+				E77E40D3247120F5000CE867 /* AllMyCoursesViewController.swift */,
+				E7DC324724731E2300A4E9FB /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,13 +294,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77E40D4247120F5000CE867 /* AllMyCoursesViewController.swift in Sources */,
 				E77EE7EA246B2594000C459C /* CollectionTableViewCell.swift in Sources */,
 				E77EE7D4246B23FF000C459C /* ViewController.swift in Sources */,
 				E77EE7EE246B25D5000C459C /* MyCollectionViewCell.swift in Sources */,
 				E75D81EA2470C80E0004965F /* SignupController.swift in Sources */,
+				E7DC324824731E2300A4E9FB /* ProfileController.swift in Sources */,
 				E77EE7F4246B5966000C459C /* CoreDataHelper.swift in Sources */,
 				E77EE7D0246B23FF000C459C /* AppDelegate.swift in Sources */,
-				E717402D246B87630051C0E5 /* ChapterController.swift in Sources */,
 				E77EE7DA246B23FF000C459C /* InMindApp.xcdatamodeld in Sources */,
 				E75A3C132470E1770047556D /* CalendarController.swift in Sources */,
 				E73440A9246ECD9C00E95473 /* Video.swift in Sources */,
