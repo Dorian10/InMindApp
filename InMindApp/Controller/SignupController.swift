@@ -75,7 +75,7 @@ class SignupController: UIViewController {
                     
                     let ref = Database.database().reference()
                     let userID = Auth.auth().currentUser?.uid
-                    ref.child("users").child("userID").setValue(["username": self.usernameTextField.text!])
+                    ref.child("users").child(userID!).setValue(["username": self.usernameTextField.text!])
                     
                     
                     
