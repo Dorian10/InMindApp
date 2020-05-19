@@ -14,10 +14,9 @@
 		E75A3C132470E1770047556D /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A3C122470E1770047556D /* CalendarController.swift */; };
 		E75A3C152470EBE80047556D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75A3C142470EBE80047556D /* LoginController.swift */; };
 		E75D81EA2470C80E0004965F /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D81E92470C80E0004965F /* SignupController.swift */; };
-		E77E40D4247120F5000CE867 /* AllMyCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77E40D3247120F5000CE867 /* AllMyCoursesViewController.swift */; };
 		E77EE7D0246B23FF000C459C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7CF246B23FF000C459C /* AppDelegate.swift */; };
 		E77EE7D2246B23FF000C459C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D1246B23FF000C459C /* SceneDelegate.swift */; };
-		E77EE7D4246B23FF000C459C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D3246B23FF000C459C /* ViewController.swift */; };
+		E77EE7D4246B23FF000C459C /* MyCoursesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D3246B23FF000C459C /* MyCoursesController.swift */; };
 		E77EE7D7246B23FF000C459C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77EE7D5246B23FF000C459C /* Main.storyboard */; };
 		E77EE7DA246B23FF000C459C /* InMindApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E77EE7D8246B23FF000C459C /* InMindApp.xcdatamodeld */; };
 		E77EE7DC246B2400000C459C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EE7DB246B2400000C459C /* Assets.xcassets */; };
@@ -40,11 +39,10 @@
 		E75A3C122470E1770047556D /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		E75A3C142470EBE80047556D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E75D81E92470C80E0004965F /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
-		E77E40D3247120F5000CE867 /* AllMyCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMyCoursesViewController.swift; sourceTree = "<group>"; };
 		E77EE7CC246B23FF000C459C /* InMindApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InMindApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77EE7CF246B23FF000C459C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77EE7D1246B23FF000C459C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E77EE7D3246B23FF000C459C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E77EE7D3246B23FF000C459C /* MyCoursesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoursesController.swift; sourceTree = "<group>"; };
 		E77EE7D6246B23FF000C459C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E77EE7D9246B23FF000C459C /* InMindApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InMindApp.xcdatamodel; sourceTree = "<group>"; };
 		E77EE7DB246B2400000C459C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,11 +137,10 @@
 		E77EE7F0246B58E4000C459C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E77EE7D3246B23FF000C459C /* ViewController.swift */,
+				E77EE7D3246B23FF000C459C /* MyCoursesController.swift */,
 				E75D81E92470C80E0004965F /* SignupController.swift */,
 				E75A3C122470E1770047556D /* CalendarController.swift */,
 				E75A3C142470EBE80047556D /* LoginController.swift */,
-				E77E40D3247120F5000CE867 /* AllMyCoursesViewController.swift */,
 				E7DC324724731E2300A4E9FB /* ProfileController.swift */,
 			);
 			path = Controller;
@@ -294,9 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77E40D4247120F5000CE867 /* AllMyCoursesViewController.swift in Sources */,
 				E77EE7EA246B2594000C459C /* CollectionTableViewCell.swift in Sources */,
-				E77EE7D4246B23FF000C459C /* ViewController.swift in Sources */,
+				E77EE7D4246B23FF000C459C /* MyCoursesController.swift in Sources */,
 				E77EE7EE246B25D5000C459C /* MyCollectionViewCell.swift in Sources */,
 				E75D81EA2470C80E0004965F /* SignupController.swift in Sources */,
 				E7DC324824731E2300A4E9FB /* ProfileController.swift in Sources */,

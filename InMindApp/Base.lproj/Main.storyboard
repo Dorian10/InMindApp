@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="2053.6231884057975" y="1395.5357142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--My Courses Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InMindApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MyCoursesController" customModule="InMindApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Rms-1V-EYh"/>
                                 </constraints>
@@ -162,7 +162,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0uk-Ju-swv"/>
+                    <navigationItem key="navigationItem" id="0uk-Ju-swv">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="6xx-OS-oqb">
+                            <connections>
+                                <action selector="didTapMenu" destination="BYZ-38-t0r" id="KvA-Eg-vH5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTextField" destination="iGn-15-s8C" id="6jC-Ld-Hpf"/>
                         <outlet property="sectionLabel" destination="yhk-Xd-VE0" id="MQP-Kd-Y08"/>
@@ -171,46 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3862" y="5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="4ie-6k-jyv">
-            <objects>
-                <viewController id="gPV-C6-U7u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PFR-jV-kr4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="76E-hx-wv5">
-                                <rect key="frame" x="0.0" y="50" width="414" height="675"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="XBK-aZ-RRJ" firstAttribute="trailing" secondItem="76E-hx-wv5" secondAttribute="trailing" id="0iE-KS-edS"/>
-                            <constraint firstItem="XBK-aZ-RRJ" firstAttribute="bottom" secondItem="76E-hx-wv5" secondAttribute="bottom" id="cWB-Zo-k9c"/>
-                            <constraint firstItem="76E-hx-wv5" firstAttribute="top" secondItem="XBK-aZ-RRJ" secondAttribute="top" constant="50" id="hrp-l8-iqC"/>
-                            <constraint firstItem="76E-hx-wv5" firstAttribute="leading" secondItem="XBK-aZ-RRJ" secondAttribute="leading" id="vwx-KA-RAy"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XBK-aZ-RRJ"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gIa-XX-xhF">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="cWn-SQ-mlt">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="J8m-XR-bhQ">
-                                <rect key="frame" x="317" y="7" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Vers Maths"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="gSA-0V-EnE"/>
-                                </connections>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5tn-wD-qKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2955" y="5"/>
+            <point key="canvasLocation" x="2957" y="5"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="Y2X-zJ-ICL">
@@ -453,7 +420,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="gPV-C6-U7u" kind="relationship" relationship="rootViewController" id="SlF-rR-4Kc"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KAR-2L-bbz"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKB-yS-Tke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
